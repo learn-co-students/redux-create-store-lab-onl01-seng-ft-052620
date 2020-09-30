@@ -28,7 +28,7 @@ function candyReducer(state = [], action) {
 function render() {
   let container = document.getElementById('container');
   if(store.getState()) {
-    container.textContent = cstore.getState().join(' ')
+    container.textContent = store.getState().join(' ')
   } else {
     throw new Error("the store's state has not been defined yet")
   }
